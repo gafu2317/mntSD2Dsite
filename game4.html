@@ -2,10 +2,118 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/game4.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Hit＆Blow</title>
 </head>
 <body>
-  
+  <body>
+    <main>
+      <div id="modal">
+          <h1>Hit & Blow</h1>
+          <p>コンピュータが選んだ数字を当てるゲームです。重複しない数字を予測して入力すると、正解の数字と比べた結果が返ってきす。</p>
+          <p>桁の位置と数字が同じだとHit。桁の位置は違うが数字が同じだとBlow。</p>
+          <p>これらの情報からコンピュータが選んだ数字を予測し10回以内に当ててください。</p>
+          <P>2～6桁のモードを用意しました。下のボタンから桁数を選ぶとゲームが開始されます。</P>
+
+          <div id="selects">
+              <div class="select">2</div>
+              <div class="select">3</div>
+              <div class="select">4</div>
+              <div class="select">5</div>
+              <div class="select">6</div>
+          </div>
+      </div>
+      <div id="end" class="hide">
+          <p></p>
+          <p></p>
+          <p onclick="window.location.reload()"></p>
+      </div>
+      <div id="numDisplay"></div>
+
+      <div class="buttons">
+          <div id="btn">submit</div>
+          <div id="clearBtn">clear</div>
+      </div>
+
+      <div id="choiceNums">
+          <ul>
+              <li class="choiceNum">0</li>
+              <li class="choiceNum">1</li>
+              <li class="choiceNum">2</li>
+              <li class="choiceNum">3</li>
+              <li class="choiceNum">4</li>
+              <li class="choiceNum">5</li>
+              <li class="choiceNum">6</li>
+              <li class="choiceNum">7</li>
+              <li class="choiceNum">8</li>
+              <li class="choiceNum">9</li>
+              </li>
+      </div>
+
+      <table id="history">
+          <thead>
+              <tr>
+                  <th>Your guess</th>
+                  <th>Hit</th>
+                  <th>Blow</th>
+              </tr>
+          <tbody>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+          </tbody>
+          </thead>
+      </table>
+  </main>
+
+    <script src="./js/game4.js"></script>
 </body>
 </html>
