@@ -236,7 +236,7 @@ function draw() {
       lives--;
       // 残機がなくなれば失敗する。
       if(!lives) {
-        alert("ざんねん！でも、みなちならきっとできるよ！");
+        alert("ざんねん！");
         document.location.reload();
       }
       else {
